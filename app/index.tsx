@@ -1,4 +1,5 @@
-import LoginScreen from "@/components/screen/loginScreen";
+
+import RegistrationScreen from "@/components/screen/RegistrationScreen";
 import { Text, View } from "react-native";
 
 
@@ -11,8 +12,8 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <LoginScreen/>
-      {/* <Text>Edit app/index.tsx to edit this screen.</Text> */}
+      <RegistrationScreen/>
+      
     </View>
   );
 }

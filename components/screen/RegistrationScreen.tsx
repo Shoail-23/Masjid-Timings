@@ -1,6 +1,6 @@
 import { View, Text, TextInput, TouchableOpacity, Image, StyleSheet } from "react-native";
 
-export default function LoginScreen() {
+export default function RegistrationScreen() {
   return (
     <View style={styles.container}>
       {/* Background Image */}
@@ -8,7 +8,7 @@ export default function LoginScreen() {
 
       {/* Islamic Calligraphy */}
       <View style={styles.imageContainer}>
-        <Image source={require("../../assets/image/text.jpeg")} style={styles.islamicImage} resizeMode="contain" />
+        <Image source={require("../../assets/image/text.png")} style={styles.islamicImage} resizeMode="contain" />
       </View>
 
       {/* Input Fields */}
@@ -17,13 +17,13 @@ export default function LoginScreen() {
       <TextInput style={styles.input} placeholder="Name" />
 
       <Text style={styles.label}>Enter Your Gmail</Text>
-      <TextInput style={styles.input} placeholder="@gmail.com" keyboardType="email-address" />
+      <TextInput style={styles.input} placeholder="user@gmail.com" keyboardType="email-address" />
 
       <Text style={styles.label}>Password</Text>
-      <TextInput style={styles.input} placeholder="12345678" secureTextEntry />
+      <TextInput style={styles.input} placeholder="password" secureTextEntry />
 
       <Text style={styles.label}>Confirm Password</Text>
-      <TextInput style={styles.input} placeholder="12345678" secureTextEntry />
+      <TextInput style={styles.input} placeholder="password" secureTextEntry />
       </View>
       {/* Get OTP Button */}
       <TouchableOpacity style={styles.button}>
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   inputContainer:{
   width:300,
   alignSelf:"center",
-//   marginTop: 90,
+  marginTop: 10,
   },
   backgroundImage: {
     position: "absolute",
@@ -55,18 +55,19 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   imageContainer: {
-    width: 300,
+    width: 100,
     height: 100,
     alignItems: "center",
     justifyContent: "center",
     marginVertical: 20,
-    borderWidth: 1,
-    borderColor: "blue",
+    // borderWidth: 1,
+    // borderColor: "blue",
     marginTop:130,
   },
   islamicImage: {
-    width: 250,
-    height: 80,
+    width: 500,
+    height: 100,
+    // backgroundColor:transparent,
   },
   label: {
     color: "#333",
@@ -87,7 +88,7 @@ const styles = StyleSheet.create({
   },
   button: {
     width: 300,
-    backgroundColor: "#ccc",
+    backgroundColor: "#32cd32",
     padding: 12,
     borderRadius: 8,
     marginTop: 50,
